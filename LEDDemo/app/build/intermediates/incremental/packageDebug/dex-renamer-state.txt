@@ -1,0 +1,4 @@
+#Tue Mar 26 22:34:31 CST 2019
+base.0=D\:\\AndroidStudioProjects\\LEDDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\AndroidStudioProjects\\LEDDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

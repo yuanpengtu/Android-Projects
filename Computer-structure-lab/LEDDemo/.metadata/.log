@@ -1,0 +1,115 @@
+!SESSION 2015-09-10 21:54:24.936 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data D:\androidSoft\LEDDemo -product org.eclipse.epp.package.java.product
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:02.986
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:677)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:168)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:52)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:268)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	... 6 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:168)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:52)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:268)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:727)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: OK
+Contains: D:\androidSoft\LEDDemo overlaps the workspace location: D:\androidSoft\LEDDemo
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:35.953
+!MESSAGE 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read from source when writing file: D:\androidSoft\LEDDemo\.metadata\.lock
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:49)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:78)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:223)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:144)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:182)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:142)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:182)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:142)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.FileStoreAdapter.copy(FileStoreAdapter.java:68)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$4.populate(NewProjectCreator.java:653)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:759)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:75)
+	... 19 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-09-10 21:55:35.954
+!MESSAGE Could not read from source when writing file: D:\androidSoft\LEDDemo\.metadata\.lock
+!STACK 0
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:75)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:223)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:144)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:182)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:142)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:182)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:142)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:120)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.FileStoreAdapter.copy(FileStoreAdapter.java:68)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$4.populate(NewProjectCreator.java:653)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:759)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:660)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:590)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.execute(NewProjectCreator.java:400)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:36.030
+!MESSAGE Failed to load properties file for project 'LEDTestingActivity'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:36.052
+!MESSAGE Failed to load properties file for project 'LEDTestingActivity'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:36.054
+!MESSAGE Failed to load properties file for project 'LEDTestingActivity'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-10 21:55:36.061
+!MESSAGE Failed to load properties file for project 'LEDTestingActivity'
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-09-10 21:56:01.313
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob

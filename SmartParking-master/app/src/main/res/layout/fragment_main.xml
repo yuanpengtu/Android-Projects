@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_advertisement" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_to_map"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/round_bg"
+                android:gravity="center"
+                android:text="找車位"
+                android:textColor="@color/normal_white"
+                android:textSize="@dimen/font_larger" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_to_pay"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/round_bg"
+                android:gravity="center"
+                android:text="缴车费"
+                android:textColor="@color/normal_white"
+                android:textSize="@dimen/font_larger" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/tv_to_book"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/round_bg"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="车位预定"
+            android:textColor="@color/normal_white"
+            android:textSize="@dimen/font_larger" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生活就是这么容易"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/dark_blue"
+        />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">led</string>
+    <string name="led1">LED1</string>
+    <string name="led2">LED2</string>
+    <string name="led3">LED3</string>
+    <string name="led4">LED4</string>
+    <string name="off">off</string>
+    <string name="on">on</string>
+    <string name="cap">CAPTURE</string>
+</resources>
